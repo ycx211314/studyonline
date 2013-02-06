@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/js/bootstrap/css/bootstrap.css"/>
+    <script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap/plug-in/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/static/js/common.js"></script>
+    <link rel="stylesheet" href="/static/public.css"/>
+    <title>怪蜀黍爱学习 ---管理</title>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/index.html">怪蜀黍爱学习</a>
+
+            <div class="nav-collapse collapse">
+                <p class="navbar-text pull-right">
+                    你好，欢迎来到怪蜀黍爱学习！
+                    <a href="/regist.html" class="navbar-link">【注册】</a>
+                    <a href="/login.html" class="navbar-link">【登录】</a>
+                </p>
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#">我的主页</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle"
+                           data-toggle="dropdown"
+                           href="#">
+                            个人中心
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">课程选择</a></li>
+                            <li><a href="#">课程选择</a></li>
+                            <li><a href="#">课程选择</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/about.html">关于我们</a></li>
+                    <li><a href="/contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3 well"></div>
+        <div class="span9 well">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</div>
+<div class="container">
+    <hr class="splitline">
+    <div class="row-fluid">
+        <div class="span2">怪蜀黍&copy 2013</div>
+        <div class="span10">
+            <ul class="inline">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li>
+                    <script src="http://s22.cnzz.com/stat.php?id=4998692&web_id=4998692&show=pic"
+                            language="JavaScript"></script>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row-fluid customerwell muted">
+        <div class="span5 offset5">
+            <h6>怪蜀黍工作室</h6>
+        </div>
+        <div class="span12">
+            <ul class="inline muted">
+                <li class="muted">京ICP证090254号</li>
+                <li class="muted">京公网安备110000000009号</li>
+                <li class="muted">甲测资字11002066</li>
+                <li class="muted">文化部监督电子邮箱：wlwh@vip.sina.com</li>
+            </ul>
+            <ul class="inline muted">
+                <li>文明办网文明上网举报电话：4000803580 举报邮箱：admin1@renren-inc.com</li>
+                <li><a target="_blank" href="http://www.bj.cyberpolice.cn/index.jsp"><img width="25" height="24"
+                                                                                          src="http://s.xnimg.cn/imgpro/civilization/c_1.jpg">不良信息举报中心</a>
+                </li>
+                <li><a href="#"><img width="25" height="24" src="http://s.xnimg.cn/imgpro/civilization/c_2.jpg">网络110报警服务</a>
+                </li>
+                <li><a target="_blank" href="http://www.bjwhzf.gov.cn/accuse.do"><img width="25" height="24"
+                                                                                      src="http://s.xnimg.cn/imgpro/civilization/c_3.jpg">北京文化市场举报热线</a>
+                </li>
+                <li><a target="_blank" href="http://wan.renren.com/safe/jzjk.html">家长监护工程</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

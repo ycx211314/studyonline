@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/js/bootstrap/css/bootstrap.css"/>
+    <script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap/plug-in/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/static/js/common.js"></script>
+    <link rel="stylesheet" href="/static/public.css"/>
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/index.html">怪蜀黍爱学习</a>
+            <div class="nav-collapse collapse">
+                {% if user %}
+                {{user}}
+                {% endif %}
+                <p class="navbar-text pull-right">
+                    你好，欢迎来到怪蜀黍爱学习！{{session.user}}
+                    【<a href="regist.jsp" class="navbar-link">注册</a>】
+                    【<a href="/login.html" class="navbar-link">登录</a>】
+                </p>
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="/index.html">首页</a></li>
+                    <li><a href="index.jsp">热门课程</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle"
+                           data-toggle="dropdown"
+                           href="#">
+                            我的进步
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">定制课程</a></li>
+                            <li><a href="#">学习测验</a></li>
+                            <li><a href="#">统计信息</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/about.html">关于我们</a></li>
+                    <li><a href="/contact.html">联系我们</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+{% block content %}{% endblock %}
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="navbar-inner">
+        <ul class="masthead-links">
+            <li>
+                <a href="/regist.html" >注册账号</a>
+            </li>
+            <li>
+                <a href="/login.html" >现在登录</a>
+            </li>
+            <li>
+                <a href="#" >关于合作</a>
+            </li>
+            <li>
+                怪蜀黍 &copy 2012-2013
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
